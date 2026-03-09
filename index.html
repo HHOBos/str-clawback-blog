@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How OTAs Keep Your Money — STR ClawBack Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #E8E8E8;
+      color: #1A1A1A;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    .blog-header {
+      background: #1A1A1A;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .blog-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .blog-header .logo-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .blog-header .logo-text span {
+      color: #FF2247;
+    }
+    .blog-header .blog-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Hero */
+    .blog-hero {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2a1015 50%, #1A1A1A 100%);
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .blog-hero .category {
+      display: inline-block;
+      background: rgba(255, 34, 71, 0.15);
+      color: #FF2247;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .blog-hero h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: #fff;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.15;
+    }
+    .blog-hero h1 em {
+      color: #FF2247;
+      font-style: normal;
+    }
+    .blog-hero .subtitle {
+      font-size: 18px;
+      color: #888;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .blog-hero .meta {
+      font-size: 13px;
+      color: #555;
+    }
+    .blog-hero .meta span {
+      color: #888;
+    }
+
+    /* Content */
+    .blog-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+    .blog-content p {
+      font-size: 17px;
+      color: #333;
+      margin-bottom: 24px;
+    }
+    .blog-content .lead {
+      font-size: 20px;
+      font-weight: 500;
+      color: #1A1A1A;
+      margin-bottom: 40px;
+    }
+
+    /* Factor Card */
+    .factor-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 32px;
+      border-left: 4px solid #FF2247;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .factor-card .factor-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 34, 71, 0.1);
+      color: #FF2247;
+      font-size: 16px;
+      font-weight: 800;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+    .factor-card h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #1A1A1A;
+      margin-bottom: 16px;
+    }
+    .factor-card p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+    .factor-card p:last-child {
+      margin-bottom: 0;
+    }
+    .factor-card .highlight {
+      background: rgba(255, 34, 71, 0.06);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #1A1A1A;
+      font-weight: 500;
+    }
+    .factor-card .highlight strong {
+      color: #FF2247;
+    }
+
+    /* Divider */
+    .section-divider {
+      text-align: center;
+      margin: 48px 0;
+    }
+    .section-divider .dots {
+      color: #FF2247;
+      font-size: 24px;
+      letter-spacing: 8px;
+    }
+
+    /* CTA */
+    .blog-cta {
+      background: #1A1A1A;
+      border-radius: 20px;
+      padding: 60px 40px;
+      text-align: center;
+      margin: 48px 0;
+    }
+    .blog-cta h3 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .blog-cta p {
+      font-size: 17px;
+      color: #888;
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .blog-cta a {
+      display: inline-block;
+      background: #FF2247;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .blog-cta a:hover {
+      background: #CC1A38;
+    }
+
+    /* Footer */
+    .blog-footer {
+      background: #1A1A1A;
+      padding: 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      margin-top: 0;
+    }
+    .blog-footer a {
+      color: #FF2247;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="blog-header">
+    <a class="logo" href="https://strclawback.com">
+      <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+        <circle cx="12" cy="20" r="4" fill="#FF2247"/>
+        <circle cx="22" cy="14" r="3" fill="#FF2247" opacity="0.7"/>
+        <circle cx="28" cy="22" r="2.5" fill="#FF2247" opacity="0.5"/>
+      </svg>
+      <span class="logo-text">STR <span>ClawBack</span></span>
+    </a>
+    <span class="blog-label">Blog</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="blog-hero">
+    <div class="category">Industry Insight</div>
+    <h1>How OTAs <em>Keep</em> Your Money</h1>
+    <p class="subtitle">The four tactics platforms use to wear down hosts and hold onto revenue that rightfully belongs to you.</p>
+    <p class="meta"><span>STR ClawBack</span> &middot; March 9, 2026 &middot; 5 min read</p>
+  </div>
+
+  <!-- Content -->
+  <div class="blog-content">
+    <p class="lead">If you're a short-term rental operator, you've felt it: the slow, grinding frustration of trying to recover money from an OTA. The runaround. The partial payouts. The sense that the system is rigged against you. That's because it is.</p>
+
+    <p>Online Travel Agencies like Airbnb, Vrbo, and Booking.com have built support systems that prioritize guest satisfaction above all else. For hosts, that means disputes are rarely resolved in your favor on the first try — and often not at all. Here are the four tactics platforms use to keep money that belongs to you.</p>
+
+    <!-- Factor 1 -->
+    <div class="factor-card">
+      <div class="factor-number">1</div>
+      <h2>Stall Tactics</h2>
+      <p>Sound familiar? You call, you follow up, you wait. You call again. You get transferred. You explain the situation for the third time to a new agent who has no context.</p>
+      <p>This isn't a support failure — it's a strategy. OTAs know that most hosts will eventually give up. Every day you spend in limbo is a day the platform holds onto your money, and every transferred call resets your progress to zero.</p>
+      <p>The playbook is simple: make the recovery process so exhausting that abandoning the claim feels like the rational choice. For operators managing dozens or hundreds of properties, the time cost of chasing each dispute individually makes it nearly impossible to fight every case.</p>
+      <div class="highlight"><strong>The reality:</strong> OTAs bank on host fatigue. The longer a case drags on, the more likely you are to accept a bad outcome or walk away entirely.</div>
+    </div>
+
+    <!-- Factor 2 -->
+    <div class="factor-card">
+      <div class="factor-number">2</div>
+      <h2>Policy Misapplication</h2>
+      <p>Platform support is built to protect the guest experience, not yours. Support agents are trained with a pro-guest bias — and the data backs it up. Hosts routinely report that policies are applied selectively, with the benefit of the doubt consistently going to the guest.</p>
+      <p>A guest claims they had a bad experience? Refund issued before you even get notified. A guest violates your house rules and you file a damage claim? Suddenly the burden of proof shifts entirely to you, with standards that seem to change case by case.</p>
+      <p>The platform's reputation depends on guest satisfaction scores and rebooking rates. Your payout is a line item they're willing to sacrifice to protect those metrics.</p>
+      <div class="highlight"><strong>The reality:</strong> You're not arguing with a neutral party. You're arguing with a system that has a financial incentive to rule against you.</div>
+    </div>
+
+    <!-- Factor 3 -->
+    <div class="factor-card">
+      <div class="factor-number">3</div>
+      <h2>Lowball Offers</h2>
+      <p>Here's what happens when a platform actually admits fault: they don't make it right — they make it fast. An agent contacts you with a "resolution" that's a fraction of what you're owed, positioned as a courtesy or goodwill gesture.</p>
+      <p>The pressure to accept is real. The offer comes with urgency: "This is what we can do." "If you decline, the case will need further review." The implication is clear — take the discount now, or risk getting nothing later.</p>
+      <p>Most hosts accept. They're tired, they're busy, and getting <em>something</em> feels better than the uncertainty of fighting for <em>everything</em>. That's exactly what the platform is counting on.</p>
+      <div class="highlight"><strong>The reality:</strong> Lowball offers aren't generosity — they're a calculated bet that you'll settle for cents on the dollar rather than escalate.</div>
+    </div>
+
+    <!-- Factor 4 -->
+    <div class="factor-card">
+      <div class="factor-number">4</div>
+      <h2>Ignoring Host Evidence</h2>
+      <p>You have the photos. You have the receipts. You have the timestamps, the messages, the house rules the guest agreed to. None of it matters if the agent reviewing your case has already decided the outcome.</p>
+      <p>OTA support agents aren't neutral arbiters — they're brand protectors. That means policies get bent, selectively applied, and routinely weaponized against hosts. Evidence that should be decisive gets dismissed as "insufficient" or "inconclusive" with no explanation.</p>
+      <p>Worse, the appeal process often routes you back to the same team with the same incentives. You're not getting a second opinion — you're getting the same opinion twice.</p>
+      <div class="highlight"><strong>The reality:</strong> The dispute process isn't designed to find the truth. It's designed to close cases quickly and cheaply — at your expense.</div>
+    </div>
+
+    <div class="section-divider"><span class="dots">&bull; &bull; &bull;</span></div>
+
+    <p>These four tactics work together as a system. Stall you out, apply policies against you, offer a fraction of what you're owed, and ignore the evidence when you push back. For individual hosts, fighting this system is a full-time job you didn't sign up for.</p>
+
+    <p>That's why we built STR ClawBack. Our AI agent audits every transaction, identifies discrepancies, builds forensic-grade cases, and fights disputes on your behalf — so you can focus on running your business while we recover the revenue that belongs to you.</p>
+
+    <!-- CTA -->
+    <div class="blog-cta">
+      <h3>Stop Leaving Money on the Table</h3>
+      <p>STR ClawBack recovers revenue that OTAs owe you. Automated. Forensic. Relentless.</p>
+      <a href="https://strclawback.com/#get-started">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="blog-footer">
+    &copy; 2026 STR ClawBack &middot; <a href="https://strclawback.com">strclawback.com</a> &middot; <a href="https://x.com/strclawback">@strclawback</a>
+  </div>
+
+</body>
+</html>
