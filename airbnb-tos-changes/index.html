@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>History Of Airbnb ToS Changes And How It Affects Hosts — STR ClawBack Blog</title>
-  <meta name="description" content="A complete timeline of every major Airbnb Terms of Service change since 2020 — and how each one eroded host protections against cancellations and wrongful refunds.">
+  <meta name="description" content="A complete timeline of every major Airbnb Terms of Service change since 2020 — the market forces behind each shift, and what savvy hosts do to stay ahead.">
   <meta property="og:title" content="History Of Airbnb ToS Changes And How It Affects Hosts">
-  <meta property="og:description" content="A complete timeline of every major Airbnb policy change since 2020 and how each one shifted power away from hosts.">
+  <meta property="og:description" content="The market shifted. The rules changed. Here's how smart hosts are adapting.">
   <meta property="og:type" content="article">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
@@ -110,6 +110,51 @@
       margin-bottom: 40px;
     }
 
+    /* Market Context Box */
+    .market-context {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      margin: 36px 0 48px;
+      border-left: 4px solid #FF2247;
+    }
+    .market-context h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1A1A1A;
+      margin-bottom: 16px;
+    }
+    .market-context .phase {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .market-context .phase:last-child {
+      margin-bottom: 0;
+    }
+    .market-context .phase-year {
+      flex-shrink: 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: #FF2247;
+      background: rgba(255,34,71,0.08);
+      padding: 4px 10px;
+      border-radius: 8px;
+      min-width: 80px;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .market-context .phase-text {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .market-context .phase-text strong {
+      color: #1A1A1A;
+    }
+
     /* Timeline */
     .timeline {
       position: relative;
@@ -196,6 +241,15 @@
       margin-bottom: 6px;
       line-height: 1.3;
     }
+    .timeline-content .market-note {
+      font-size: 13px;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      background: rgba(0,0,0,0.03);
+      border-radius: 8px;
+    }
     .timeline-content .impact-label {
       font-size: 12px;
       font-weight: 600;
@@ -215,10 +269,10 @@
       font-weight: 700;
       letter-spacing: 1px;
     }
-    .severity.critical { background: rgba(255,34,71,0.12); color: #FF2247; }
-    .severity.high { background: rgba(255,140,0,0.12); color: #e07800; }
-    .severity.moderate { background: rgba(255,200,0,0.15); color: #b38f00; }
-    .severity.mixed { background: rgba(0,140,255,0.12); color: #0078d4; }
+    .severity.know-this { background: rgba(255,34,71,0.12); color: #FF2247; }
+    .severity.stay-sharp { background: rgba(255,140,0,0.12); color: #e07800; }
+    .severity.monitor { background: rgba(255,200,0,0.15); color: #b38f00; }
+    .severity.opportunity { background: rgba(0,140,255,0.12); color: #0078d4; }
 
     /* Tooltip Bullets */
     .tooltip-list {
@@ -385,6 +439,63 @@
       background: #FF2247;
     }
 
+    /* Sources */
+    .sources-section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      margin: 48px 0;
+    }
+    .sources-section h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #1A1A1A;
+      margin-bottom: 8px;
+    }
+    .sources-section .sources-note {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 24px;
+    }
+    .sources-group {
+      margin-bottom: 24px;
+    }
+    .sources-group:last-child {
+      margin-bottom: 0;
+    }
+    .sources-group h4 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #FF2247;
+      margin-bottom: 10px;
+    }
+    .sources-group ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources-group ul li {
+      font-size: 14px;
+      color: #555;
+      padding: 6px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .sources-group ul li:last-child {
+      border-bottom: none;
+    }
+    .sources-group ul li a {
+      color: #1A1A1A;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.15);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .sources-group ul li a:hover {
+      color: #FF2247;
+      border-color: #FF2247;
+    }
+
     /* CTA */
     .blog-cta {
       background: #1A1A1A;
@@ -436,67 +547,6 @@
       text-decoration: none;
     }
 
-    /* Bibliography */
-    .bibliography {
-      background: #fff;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-      margin: 0 0 48px;
-    }
-    .bibliography h3 {
-      font-size: 26px;
-      font-weight: 800;
-      color: #1A1A1A;
-      margin-bottom: 8px;
-    }
-    .bibliography .bib-intro {
-      font-size: 14px;
-      color: #888;
-      margin-bottom: 32px;
-    }
-    .bib-section {
-      margin-bottom: 28px;
-    }
-    .bib-section:last-child {
-      margin-bottom: 0;
-    }
-    .bib-section h4 {
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #FF2247;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #eee;
-    }
-    .bib-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    .bib-section ul li {
-      font-size: 14px;
-      color: #555;
-      padding: 6px 0;
-      line-height: 1.5;
-      border-bottom: 1px solid #f5f5f5;
-    }
-    .bib-section ul li:last-child {
-      border-bottom: none;
-    }
-    .bib-section ul li a {
-      color: #1A1A1A;
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid rgba(255,34,71,0.2);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .bib-section ul li a:hover {
-      color: #FF2247;
-      border-color: #FF2247;
-    }
-
     /* Responsive */
     @media (max-width: 768px) {
       .blog-hero h1 { font-size: 30px; }
@@ -524,6 +574,10 @@
       .timeline-content h2 { font-size: 19px; }
       .tooltip-trigger { font-size: 13.5px; padding: 8px 12px 8px 26px; }
       .tooltip-panel { padding: 18px; }
+      .market-context { padding: 24px; }
+      .market-context .phase { flex-direction: column; gap: 6px; }
+      .market-context .phase-year { min-width: auto; display: inline-block; }
+      .sources-section { padding: 24px; }
     }
   </style>
 </head>
@@ -546,20 +600,47 @@
   <div class="blog-hero">
     <div class="category">Policy Analysis</div>
     <h1>History Of Airbnb ToS Changes And How It <em>Affects Hosts</em></h1>
-    <p class="subtitle">Every major Airbnb policy change since 2020 &mdash; and how each one shifted the balance of power away from hosts and toward the platform.</p>
-    <p class="meta"><span>STR ClawBack</span> &middot; March 23, 2026 &middot; 12 min read</p>
+    <p class="subtitle">The market shifted. The rules changed. The hosts who stayed ahead of each update are the ones still thriving. Here's the full timeline.</p>
+    <p class="meta"><span>STR ClawBack</span> &middot; March 23, 2026 &middot; 14 min read</p>
   </div>
 
   <!-- Content -->
   <div class="blog-content">
-    <p class="lead">Since January 2020, Airbnb has made at least nine major changes to its Terms of Service, cancellation policies, and host protection programs. Taken individually, each change looked incremental. Taken together, they tell a single story: the systematic erosion of host protections against cancellations and wrongful refunds.</p>
+    <p class="lead">Since 2020, Airbnb has made nine major changes to its Terms of Service, cancellation policies, and host protection programs. Each change was driven by real market forces &mdash; shifting supply and demand, platform competition, and the need to address bad actors. But the cumulative effect has been a landscape where only the most informed, strategic hosts are protecting their revenue.</p>
 
-    <p>What follows is a complete timeline. Click any bullet to see exactly what changed, why it matters, and what you can do about it today.</p>
+    <p>This isn't about vilifying Airbnb. It's a publicly traded company making business decisions based on market conditions. The question for hosts is simple: do you understand what changed, why, and what to do about it?</p>
 
     <blockquote>
-      "Every policy update was framed as 'improving the guest experience.' None of them were framed as 'reducing what we owe hosts.'"
-      <cite>&mdash; The pattern hiding in plain sight</cite>
+      "The rules of the game changed nine times in six years. The hosts who treated each update like a memo instead of a strategy session are the ones losing money."
+      <cite>&mdash; The difference between knowing and doing</cite>
     </blockquote>
+
+    <!-- Market Context -->
+    <div class="market-context">
+      <h3>Understanding the Market Forces Behind the Changes</h3>
+      <div class="phase">
+        <div class="phase-year">2020</div>
+        <div class="phase-text"><strong>Supply shock.</strong> COVID shut down travel overnight. Many hosts exited the market, management companies folded, and inventory disappeared. The result was a host-favorable market &mdash; more guests than available properties. Airbnb needed hosts and treated them accordingly.</div>
+      </div>
+      <div class="phase">
+        <div class="phase-year">2021</div>
+        <div class="phase-text"><strong>Revenge travel.</strong> Demand roared back while supply was still recovering. Hosts who stayed in the game saw record occupancy and ADRs. Airbnb went public (December 2020) and needed to show growth &mdash; which meant keeping both sides of the marketplace happy.</div>
+      </div>
+      <div class="phase">
+        <div class="phase-year">2022</div>
+        <div class="phase-text"><strong>The gold rush.</strong> Sky-high nightly rates attracted a wave of new hosts to the platform. Supply surged. Airbnb began to see saturation in key markets and an influx of inexperienced hosts with inconsistent quality. The balance of power started to shift.</div>
+      </div>
+      <div class="phase">
+        <div class="phase-year">2023&ndash;24</div>
+        <div class="phase-text"><strong>Supply exceeds demand.</strong> With more listings than ever and travel normalizing, Airbnb had leverage. Policy updates began targeting quality control &mdash; weeding out bad hosts, tightening standards &mdash; but the rules applied to everyone, including experienced operators.</div>
+      </div>
+      <div class="phase">
+        <div class="phase-year">2025</div>
+        <div class="phase-text"><strong>Guest-first era.</strong> With supply saturated, Airbnb leaned fully into guest acquisition and retention. The Strict policy was eliminated, commissions rose to 15.5%, and the platform bet that hosts would absorb the changes rather than leave. For unsophisticated hosts, that bet was correct.</div>
+      </div>
+    </div>
+
+    <p>With that context, here's what actually changed &mdash; and what smart hosts are doing about each one. Click any bullet to see the details.</p>
 
     <div class="section-divider"><span class="dots">&bull; &bull; &bull;</span></div>
 
@@ -571,46 +652,47 @@
         <div class="timeline-content">
           <div class="timeline-date">March 2020</div>
           <h2>COVID Extenuating Circumstances Override</h2>
-          <div class="impact-label">Host Impact: <span class="severity critical">CRITICAL</span></div>
+          <div class="market-note">Market context: Host supply collapsing &bull; Airbnb pre-IPO &bull; Crisis response mode</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity know-this">KNOW THIS</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">All host cancellation policies overridden globally</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">All host cancellation policies overridden for full guest refunds</div>
               <div class="tooltip-panel">
-                <h4>Full Policy Override</h4>
-                <p>Airbnb activated its Extenuating Circumstances Policy worldwide, allowing guests to cancel any reservation for a full refund &mdash; regardless of whether the host had set Strict, Moderate, or Flexible. Hosts with non-refundable rates saw those rates voided overnight.</p>
+                <h4>Global Policy Override</h4>
+                <p>Airbnb activated its Extenuating Circumstances Policy worldwide, allowing guests to cancel any reservation for a full refund regardless of the host's selected cancellation policy. It was a crisis decision &mdash; but it caught most hosts off guard and wiped out expected revenue overnight.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Audit your current cancellation exposure &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guest full refunds issued without host consent</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">$250M host relief fund covered only 25% of lost payouts</div>
               <div class="tooltip-panel">
-                <h4>Unilateral Refunds</h4>
-                <p>Refunds were processed automatically. Hosts were not consulted, and in many cases were not even notified until after the money had already been returned to the guest. There was no appeals process during the initial activation.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Track refunds issued against your listings &rarr;</a>
+                <h4>Partial Relief, Not Full Recovery</h4>
+                <p>Airbnb created a $250M relief fund for hosts, but it covered only 25% of what hosts would have earned under their own cancellation policies. Hosts who understood the math realized early that platform promises and platform payouts are different things &mdash; a lesson that applies to every update since.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Calculate your actual payout vs. expected revenue &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Host relief fund covered only 25% of lost payouts</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Override window extended repeatedly without host input</div>
               <div class="tooltip-panel">
-                <h4>$250M Fund &mdash; A Fraction of Losses</h4>
-                <p>Airbnb created a $250M relief fund, but it only covered 25% of what hosts would have earned under their own cancellation policies. Hosts who relied on Strict policies for revenue protection received a quarter of what they were owed &mdash; framed as generosity.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Calculate your historical revenue gaps &rarr;</a>
+                <h4>Moving Goalposts</h4>
+                <p>The initial override was supposed to be temporary. It was extended multiple times through mid-2020, each time without advance notice or host consultation. Hosts who planned around the original timeline found the rules changed beneath them. The takeaway: build business plans that assume policies can shift.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build a revenue strategy resilient to policy shifts &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Override window repeatedly extended with no host input</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Revealed that cancellation policies are preferences, not guarantees</div>
               <div class="tooltip-panel">
-                <h4>Rolling Extensions</h4>
-                <p>The initial override covered bookings through April 14, 2020. Airbnb then extended it multiple times through mid-2020, each time without consulting hosts or allowing them to opt out. Hosts could not plan around a moving target.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">See how platform overrides affect your payouts &rarr;</a>
+                <h4>The Wake-Up Call</h4>
+                <p>This was the moment sophisticated hosts realized that a cancellation policy on Airbnb is a setting, not a contract. The platform retains the ability to override it. That's how marketplace platforms work. But hosts who don't understand that distinction are operating with a false sense of security.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Understand the real protections in your account &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Precedent set: Airbnb can void any policy at will</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Unsophisticated hosts absorbed losses; savvy hosts adapted fast</div>
               <div class="tooltip-panel">
-                <h4>The Dangerous Precedent</h4>
-                <p>This was the first time Airbnb demonstrated it could and would override host-selected cancellation policies on a global scale. It established that the cancellation policy a host selects is a preference, not a contract &mdash; and the platform retains unilateral authority to void it.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Protect your revenue from platform overrides &rarr;</a>
+                <h4>Separation of Operators</h4>
+                <p>Hosts who treated this as a one-time crisis event missed the signal. The operators who used this as a catalyst &mdash; diversifying channels, building direct booking capabilities, creating documentation systems &mdash; were better positioned for every policy change that followed.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Start building your resilience playbook &rarr;</a>
               </div>
             </li>
           </ul>
@@ -623,46 +705,47 @@
         <div class="timeline-content">
           <div class="timeline-date">April 2022</div>
           <h2>Rebooking and Refund Policy</h2>
-          <div class="impact-label">Host Impact: <span class="severity critical">CRITICAL</span></div>
+          <div class="market-note">Market context: Supply surging &bull; New hosts flooding in &bull; Quality inconsistency rising</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity know-this">KNOW THIS</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guest complaint window tripled from 24 to 72 hours</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guest complaint window expanded from 24 to 72 hours</div>
               <div class="tooltip-panel">
-                <h4>72-Hour Travel Issue Window</h4>
-                <p>Previously, guests had 24 hours after check-in to report issues. This was expanded to 72 hours, giving guests three full days to find or manufacture complaints. A guest on a weekend stay could report a "Travel Issue" after their entire trip was already complete.</p>
+                <h4>Wider Reporting Window</h4>
+                <p>Guests now have 72 hours after check-in (up from 24) to report "Travel Issues" and request a refund. Airbnb introduced this partly because inexperienced hosts were delivering inconsistent experiences. But it applies to all hosts &mdash; even those with pristine properties. Smart hosts responded by tightening check-in documentation.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Set up real-time check-in documentation &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Policy explicitly overrides host cancellation settings</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Policy explicitly takes precedence over host cancellation settings</div>
               <div class="tooltip-panel">
-                <h4>Host Policies Subordinated</h4>
-                <p>The new policy included language stating it "controls and takes precedence over the reservation's cancellation policy." A guest on a Strict, non-refundable booking could now receive a full refund by claiming a Travel Issue &mdash; and the determination was made by Airbnb, not the host.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Understand what your cancellation policy actually protects &rarr;</a>
+                <h4>Policy Hierarchy Clarified</h4>
+                <p>The new policy includes language stating it "controls and takes precedence over the reservation's cancellation policy." This means a guest on a Strict booking can receive a full refund if Airbnb determines a Travel Issue occurred. Hosts who understand this prioritize prevention over policy selection.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Learn what your cancellation policy actually protects &rarr;</a>
               </div>
             </li>
             <li>
               <div class="tooltip-trigger" onclick="toggleTooltip(this)">Subjective "Travel Issues" qualify for full refunds</div>
               <div class="tooltip-panel">
-                <h4>Vague Qualifying Criteria</h4>
-                <p>Covered issues include "cleanliness concerns," "missing amenities," and listings being "materially different" from the description. These are subjective assessments where the guest's word often outweighs the host's evidence. No independent verification is required.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Document your property to dispute subjective claims &rarr;</a>
+                <h4>Subjective Criteria, Objective Consequences</h4>
+                <p>Qualifying issues include "cleanliness concerns," "missing amenities," and "material differences" from the listing. These are judgment calls. The best defense isn't arguing the judgment &mdash; it's ensuring your listing is accurate to the pixel and your property exceeds what's described. Leave no room for interpretation.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Audit your listing accuracy to prevent claims &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Hosts initially liable for guest rebooking costs</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Refunds can be processed before hosts are notified</div>
               <div class="tooltip-panel">
-                <h4>Rebooking Cost Liability (Later Removed)</h4>
-                <p>The original policy made hosts financially responsible for the cost of rebooking the guest into comparable accommodation. After massive backlash from the host community, this provision was removed &mdash; but its initial inclusion revealed the platform's direction.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Monitor policy changes that affect your liability &rarr;</a>
+                <h4>Speed Favors the Guest</h4>
+                <p>In many cases, Airbnb processes guest refunds before the host has a chance to respond. This isn't necessarily unfair &mdash; the guest had a bad experience and the platform moved quickly. But it means hosts who aren't monitoring their accounts proactively discover losses after the fact. Stay ahead of it.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Get real-time alerts on refunds and payout changes &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Refunds processed before hosts can respond</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Originally included host liability for rebooking costs (later removed)</div>
               <div class="tooltip-panel">
-                <h4>Guilty Until Proven Innocent</h4>
-                <p>In many reported cases, Airbnb issues refunds to guests before notifying the host or allowing them to respond. The host discovers the refund as a deduction from their next payout. The burden then shifts to the host to prove the refund was unjustified &mdash; an inversion of due process.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Get alerts when refunds are issued against your payouts &rarr;</a>
+                <h4>Host Community Pushback Worked</h4>
+                <p>The original version of this policy made hosts financially responsible for rebooking the guest into comparable accommodation. After significant host community backlash, Airbnb removed this provision. It's a reminder that organized, vocal hosts can influence policy &mdash; but only if they're paying attention to what's being proposed.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Stay informed on policy proposals that affect your bottom line &rarr;</a>
               </div>
             </li>
           </ul>
@@ -675,46 +758,47 @@
         <div class="timeline-content">
           <div class="timeline-date">May 2022</div>
           <h2>AirCover for Guests Launched</h2>
-          <div class="impact-label">Host Impact: <span class="severity high">HIGH</span></div>
+          <div class="market-note">Market context: Platform competing for guest loyalty &bull; VRBO, Booking.com growing</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity stay-sharp">STAY SHARP</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Booking Protection Guarantee overrides host decisions</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Booking Protection Guarantee formalizes rebooking for host cancellations</div>
               <div class="tooltip-panel">
-                <h4>Airbnb as Override Authority</h4>
-                <p>If a host cancels within 30 days of check-in, Airbnb guarantees the guest a similar or better home &mdash; or a full refund. This codified Airbnb's role as an intermediary that can override host cancellation decisions and penalize hosts for managing their own properties.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Plan around AirCover exposure windows &rarr;</a>
+                <h4>Structured Safety Net for Guests</h4>
+                <p>If a host cancels within 30 days of check-in, Airbnb guarantees the guest a similar home or full refund. This was Airbnb's competitive play against hotels and VRBO. For hosts, it means last-minute cancellations carry real consequences &mdash; but it also means the platform is investing in booking reliability, which benefits everyone.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Plan around AirCover timelines &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Get-What-You-Booked Guarantee enables subjective disputes</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Get-What-You-Booked Guarantee creates 3-day accuracy window</div>
               <div class="tooltip-panel">
-                <h4>Subjective "Accuracy" Standard</h4>
-                <p>Guests who feel a listing is "materially different" from the photos or description have 3 days to report it for a rebooking or full refund. "Materially different" is decided by Airbnb. A worn couch, a slightly smaller pool, or different decor from photos taken months ago can all trigger it.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Audit your listing accuracy to prevent claims &rarr;</a>
+                <h4>Listing Accuracy Matters More Than Ever</h4>
+                <p>Guests have 3 days to report a property that's "materially different" from the listing. This was designed to address the flood of new, poorly-described listings from inexperienced hosts. Experienced hosts with accurate, up-to-date listings and recent photos have little to worry about &mdash; this is a quality filter.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Audit your listing photos and descriptions &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Check-In Guarantee creates new refund pathway</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Check-In Guarantee adds refund path for access issues</div>
               <div class="tooltip-panel">
-                <h4>Check-In Failures = Automatic Refund</h4>
-                <p>If a guest reports they "can't check in" &mdash; lockbox didn't work, key wasn't where described, couldn't find the property &mdash; Airbnb immediately offers alternative accommodation or a full refund. Hosts report cases where guests failed to follow clear instructions and still received refunds.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Bulletproof your check-in process &rarr;</a>
+                <h4>Bulletproof Your Check-In</h4>
+                <p>If a guest can't check in, Airbnb offers alternative accommodation or a refund. Most check-in failures are preventable &mdash; redundant access methods, clear instructions with photos, and a responsive co-host or manager. Hosts who invest in a reliable check-in process don't get caught by this.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build a fail-safe check-in system &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Multiple overlapping refund mechanisms now exist</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Multiple overlapping refund pathways now exist</div>
               <div class="tooltip-panel">
-                <h4>Stacked Refund Pathways</h4>
-                <p>With AirCover for Guests layered on top of the Rebooking and Refund Policy, guests now have multiple independent pathways to obtain refunds that bypass host cancellation policies. A denied claim through one channel can be re-attempted through another.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Map your refund exposure across all pathways &rarr;</a>
+                <h4>Know All the Doors</h4>
+                <p>With AirCover layered on top of the Rebooking and Refund Policy, guests now have several independent pathways to request refunds. Savvy hosts map all of these pathways and address each one proactively &mdash; accurate listings, documented check-ins, responsive communication, and meticulous property standards.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Map your complete refund exposure &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Marketing frames guest protection as host accountability</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guest marketing encourages use of protection pathways</div>
               <div class="tooltip-panel">
-                <h4>The Framing Problem</h4>
-                <p>Airbnb marketed AirCover for Guests as "the most comprehensive protection in travel" &mdash; positioning guest-friendly refund mechanisms as a competitive advantage. For hosts, this means the platform actively encourages guests to use these pathways, increasing the volume of claims.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Understand the claim patterns affecting your properties &rarr;</a>
+                <h4>Guests Are Being Trained</h4>
+                <p>Airbnb markets AirCover for Guests prominently. That means guests are increasingly aware of their refund options and more likely to use them. This isn't a problem for hosts who run tight operations &mdash; it's a problem for hosts who rely on hope instead of systems. The bar for professionalism just went up.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Elevate your operations to meet the new standard &rarr;</a>
               </div>
             </li>
           </ul>
@@ -726,47 +810,48 @@
       <div class="timeline-entry">
         <div class="timeline-content">
           <div class="timeline-date">August 2022</div>
-          <h2>Host Cancellation Penalty 10x Increase</h2>
-          <div class="impact-label">Host Impact: <span class="severity high">HIGH</span></div>
+          <h2>Host Cancellation Penalty Increase</h2>
+          <div class="market-note">Market context: New hosts canceling often &bull; Guest experience inconsistency &bull; Reliability push</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity stay-sharp">STAY SHARP</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Maximum cancellation fee jumped from $100 to $1,000</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Maximum cancellation fee increased from $100 to $1,000</div>
               <div class="tooltip-panel">
-                <h4>10x Fee Increase</h4>
-                <p>The maximum penalty fee for host-initiated cancellations increased from $100 to $1,000 &mdash; a tenfold increase. The fee ranges from $50 to $1,000 depending on timing and circumstances, with Airbnb determining the amount. This makes it prohibitively expensive for hosts to cancel even problematic reservations.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Calculate your cancellation risk exposure &rarr;</a>
+                <h4>Higher Stakes for Host Cancellations</h4>
+                <p>The penalty for host-initiated cancellations jumped 10x. This was largely aimed at inexperienced hosts who were listing properties and then canceling when they got cold feet or found higher-paying guests elsewhere. For professional hosts, the lesson is straightforward: don't list dates you can't honor.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Optimize your calendar management &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Calendar blocked for canceled dates with no override</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Canceled dates blocked on calendar with no override</div>
               <div class="tooltip-panel">
-                <h4>Calendar Blocking Penalty</h4>
-                <p>When a host cancels a reservation, the dates are blocked on their calendar and cannot be made available again. This means a host who cancels a bad reservation not only pays a fee but loses the revenue opportunity for those dates entirely. There is no way to override this.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Develop strategies to avoid forced cancellations &rarr;</a>
+                <h4>Lost Dates, Lost Revenue</h4>
+                <p>When a host cancels, those dates are blocked and can't be rebooked. Combined with the fee, a single cancellation can cost a host thousands in penalties plus lost revenue. Smart hosts build systems &mdash; co-host backups, maintenance schedules, contingency plans &mdash; that make cancellations a last resort.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build contingency plans that prevent cancellations &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Three cancellations in a year = Superhost status lost</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Three cancellations per year = Superhost status lost</div>
               <div class="tooltip-panel">
-                <h4>Superhost Status at Risk</h4>
-                <p>Just three host-initiated cancellations in a rolling year disqualifies a host from Superhost status. Losing Superhost means lower search ranking, no Superhost badge (which drives bookings), and loss of Superhost rewards. This creates enormous pressure to honor every reservation regardless of red flags.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Protect your Superhost status with better screening &rarr;</a>
+                <h4>Superhost Is a Business Asset &mdash; Protect It</h4>
+                <p>Just three host-initiated cancellations in a rolling year costs you Superhost status, which impacts search ranking and booking velocity. This is Airbnb's reliability filter. Hosts who treat Superhost as a strategic asset build the operational infrastructure to maintain it.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Protect your Superhost status with better systems &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Asymmetric penalties: host cancellations punished, guest cancellations eased</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Host and guest cancellation consequences moving in opposite directions</div>
               <div class="tooltip-panel">
-                <h4>The Double Standard</h4>
-                <p>In the same year that host cancellation penalties increased 10x, Airbnb introduced multiple new pathways for guests to cancel and receive refunds. The asymmetry is structural: hosts face escalating consequences for canceling, while guests face declining consequences.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">See the full asymmetry in your account data &rarr;</a>
+                <h4>Read the Market Signal</h4>
+                <p>In the same year, host cancellation penalties increased while guest cancellation became easier. This isn't random &mdash; it reflects Airbnb's assessment that guest retention is the growth driver and host supply is increasingly abundant. Hosts who recognize this market dynamic plan accordingly.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Adapt your strategy to the current market reality &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">"Acceptable reasons" for host cancellation are opaque</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Criteria for "valid reason" exemptions remain unclear</div>
               <div class="tooltip-panel">
-                <h4>Unclear Exemption Criteria</h4>
-                <p>Airbnb states that some host cancellations may be exempt from penalties for "valid reasons," but the criteria for what qualifies are not publicly defined. Hosts report inconsistent outcomes &mdash; the same reason accepted in one case is rejected in another, with no explanation of the difference.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Document valid reasons to support penalty appeals &rarr;</a>
+                <h4>Document Everything</h4>
+                <p>Airbnb allows some cancellations without penalty for "valid reasons," but the criteria aren't publicly defined. Hosts report inconsistent outcomes for similar situations. The defense: document everything &mdash; maintenance emergencies, safety concerns, guest communication &mdash; so you have a paper trail if you need to make your case.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build a documentation system that supports your appeals &rarr;</a>
               </div>
             </li>
           </ul>
@@ -779,46 +864,47 @@
         <div class="timeline-content">
           <div class="timeline-date">June 2024</div>
           <h2>Major Disruptive Events Policy</h2>
-          <div class="impact-label">Host Impact: <span class="severity mixed">MIXED</span></div>
+          <div class="market-note">Market context: Post-pandemic normalization &bull; Policy cleanup &bull; Scope narrowing</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity opportunity">OPPORTUNITY</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Extenuating Circumstances renamed and narrowed</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Extenuating Circumstances renamed and significantly narrowed</div>
               <div class="tooltip-panel">
-                <h4>Scope Reduction</h4>
-                <p>The broad "Extenuating Circumstances Policy" was replaced with the narrower "Major Disruptive Events Policy." The renamed policy only covers events at the property location &mdash; not events affecting guest travel to the property. This reduces the situations where the policy can override host cancellation settings.</p>
+                <h4>A Win for Informed Hosts</h4>
+                <p>The broad "Extenuating Circumstances Policy" was replaced with the narrower "Major Disruptive Events Policy." It now only covers events at the property location &mdash; not events affecting guest travel. This reduces the situations where the policy can be used to override your cancellation settings. Fewer override triggers means more policy stability.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Understand which events still trigger overrides &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Travel disruptions no longer covered for guests</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Flight cancellations and travel disruptions no longer qualify guests</div>
               <div class="tooltip-panel">
-                <h4>Flight Cancellations Excluded</h4>
-                <p>Flight cancellations, transportation strikes, and other travel disruptions no longer qualify guests for policy-based refunds. Previously, a guest whose flight was canceled could invoke Extenuating Circumstances for a full refund overriding the host's policy. This pathway is now closed.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Review which refund pathways still apply to your listings &rarr;</a>
+                <h4>Guest Travel Risk Shifted Back to Guests</h4>
+                <p>Previously, a guest whose flight was canceled could invoke Extenuating Circumstances for a full refund. That pathway is now closed. This is favorable for hosts &mdash; it means your cancellation policy holds even when the guest has travel problems getting to your property.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Review which refund triggers still apply to your listings &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">COVID-19 explicitly excluded from coverage</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">COVID-19 explicitly excluded from qualifying events</div>
               <div class="tooltip-panel">
-                <h4>Pandemic No Longer a Qualifying Event</h4>
-                <p>The policy now explicitly states that endemic diseases, including COVID-19, are not qualifying events. Guests cannot use COVID concerns or positive tests to obtain policy-based refunds. This is favorable for hosts who saw pandemic-related overrides throughout 2020-2021.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Update your listing policies for current rules &rarr;</a>
+                <h4>Pandemic Chapter Closed</h4>
+                <p>The new policy explicitly states that endemic diseases, including COVID, are not qualifying events. No more pandemic-based refund requests overriding your policies. For hosts who lost significant revenue during 2020-2021 to these overrides, this is a meaningful improvement.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Update your strategy for the current policy landscape &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Airbnb retains unilateral activation authority</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Airbnb retains sole authority to activate the policy</div>
               <div class="tooltip-panel">
-                <h4>Platform Still Holds the Switch</h4>
-                <p>While the scope was narrowed, Airbnb retains sole authority to determine when the policy is activated and for which regions. Hosts have no input into these decisions, no advance notice requirement, and no mechanism to challenge an activation that affects their bookings.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Monitor policy activations in your operating regions &rarr;</a>
+                <h4>Know the Remaining Risk</h4>
+                <p>While the scope narrowed, Airbnb still decides when the policy activates and for which regions. Natural disasters, government-mandated restrictions, and major utility outages still qualify. Smart hosts in hurricane zones, wildfire areas, or regions with infrastructure risk factor this into their revenue planning.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Factor regional risks into your revenue model &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Host protections also narrowed by same policy change</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Narrowing also reduces host flexibility for legitimate cancellations</div>
               <div class="tooltip-panel">
-                <h4>The Tradeoff for Hosts</h4>
-                <p>The narrowing cuts both ways. Hosts who previously could invoke Extenuating Circumstances to cancel without penalty (e.g., due to a local utility failure not caused by a declared event) may no longer qualify. The tighter definition protects hosts from guest overrides but also limits host flexibility.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Assess your exposure under the narrowed policy &rarr;</a>
+                <h4>The Tradeoff</h4>
+                <p>The tighter definition protects hosts from guest overrides, but it also limits situations where hosts can cancel without penalty. A local utility failure that isn't part of a declared event may no longer qualify. Know the new boundaries so you're not surprised when you need to cancel for a legitimate reason.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Understand the new boundaries and plan accordingly &rarr;</a>
               </div>
             </li>
           </ul>
@@ -831,46 +917,47 @@
         <div class="timeline-content">
           <div class="timeline-date">Late 2024</div>
           <h2>Mandatory Arbitration &amp; Class Action Waiver</h2>
-          <div class="impact-label">Host Impact: <span class="severity critical">CRITICAL</span></div>
+          <div class="market-note">Market context: Legal landscape shifting &bull; Platform consolidating dispute control</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity know-this">KNOW THIS</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Mandatory binding arbitration replaces court access</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">All disputes routed through binding arbitration</div>
               <div class="tooltip-panel">
-                <h4>No More Lawsuits</h4>
-                <p>Updated terms require hosts to resolve all disputes through binding arbitration rather than the court system. Hosts waive their right to a jury trial. Arbitration is conducted by a private arbitration service &mdash; not a public court &mdash; and outcomes are not publicly recorded or appealable.</p>
+                <h4>Different Forum, Same Need for Preparation</h4>
+                <p>Updated terms require disputes to go through binding arbitration rather than court. This is standard practice for major platforms &mdash; Uber, Amazon, and most marketplaces use similar clauses. What it means for hosts: if you have a dispute, your preparation and documentation matter more than ever because you get one shot in arbitration.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Understand your dispute resolution options &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Class action waiver prevents collective host action</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Class action waiver means disputes are individual</div>
               <div class="tooltip-panel">
-                <h4>Hosts Cannot Band Together</h4>
-                <p>The class action waiver means hosts cannot participate in or initiate class action lawsuits against Airbnb. Each host must individually arbitrate disputes, making it economically impractical to challenge systemic policies that cause moderate but widespread harm across thousands of hosts.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Learn about collective advocacy alternatives &rarr;</a>
+                <h4>You're On Your Own &mdash; Be Ready</h4>
+                <p>Hosts can't band together for class action lawsuits. Each dispute is individual. This makes it economically impractical to challenge smaller losses through legal channels. The strategic response: prevent the losses upstream through better operations, documentation, and proactive monitoring rather than trying to recover them downstream.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Shift from recovery to prevention &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Small claims court remains as narrow exception</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Small claims court preserved as an option</div>
               <div class="tooltip-panel">
-                <h4>Small Claims Loophole</h4>
-                <p>The updated terms preserve the right to bring individual claims in small claims court. However, small claims courts have strict monetary limits (typically $5,000-$10,000 depending on jurisdiction) and cannot address systemic policy issues or set precedent.</p>
+                <h4>Know Your Limits</h4>
+                <p>Individual claims can still go to small claims court (typically $5,000-$10,000 depending on jurisdiction). For hosts dealing with specific wrongful refunds or damage claim denials, this remains a viable option &mdash; especially when you have strong documentation.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Evaluate whether small claims fits your situation &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Dispute costs make individual challenges uneconomical</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Cost of challenging individual disputes often exceeds the loss</div>
               <div class="tooltip-panel">
-                <h4>The Economics of Silence</h4>
-                <p>Individual arbitration requires time, legal knowledge, and often attorney fees. For a $500 wrongful refund, the cost of arbitration can exceed the amount in dispute. This creates a structural incentive for hosts to absorb losses rather than fight them &mdash; which is the point.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Find cost-effective ways to challenge wrongful refunds &rarr;</a>
+                <h4>The Math Problem</h4>
+                <p>For a $500 wrongful refund, the time and cost of arbitration can exceed the amount in dispute. Airbnb knows this. Sophisticated hosts know it too &mdash; which is why they focus on systems that prevent losses in the first place rather than fighting each one after the fact.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Automate your loss prevention &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Acceptance required to continue using the platform</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Acceptance required by April 2026 to keep listing</div>
               <div class="tooltip-panel">
-                <h4>Accept or Leave</h4>
-                <p>Hosts must accept the updated terms by April 2026 to continue using the platform. There is no option to accept some terms and reject others. The arbitration clause and class action waiver are non-negotiable &mdash; effectively a take-it-or-leave-it proposition for hosts who depend on the platform for income.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Diversify your booking channels before the deadline &rarr;</a>
+                <h4>Accept and Adapt</h4>
+                <p>These terms are non-negotiable &mdash; accept them or leave the platform. Most hosts will accept. The smart ones will also diversify their booking channels, build direct booking capabilities, and ensure they're not 100% dependent on any single platform's terms.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build a multi-channel revenue strategy &rarr;</a>
               </div>
             </li>
           </ul>
@@ -882,47 +969,48 @@
       <div class="timeline-entry">
         <div class="timeline-content">
           <div class="timeline-date">June 2025</div>
-          <h2>Unlimited Chargeback Liability &amp; Payment Overhaul</h2>
-          <div class="impact-label">Host Impact: <span class="severity critical">CRITICAL</span></div>
+          <h2>Payment Overhaul &amp; Chargeback Liability</h2>
+          <div class="market-note">Market context: Supply-saturated market &bull; Commission at 15.5% &bull; Platform maximizing control</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity know-this">KNOW THIS</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Hosts liable for guest chargebacks with no time limit</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Hosts now liable for guest chargebacks with no stated time limit</div>
               <div class="tooltip-panel">
-                <h4>Unlimited Chargeback Exposure</h4>
-                <p>Under the 2025 payment terms, hosts are financially responsible for guest chargebacks with no stated time limit. A guest can dispute a credit card charge weeks or months after a completed stay, and the full amount can be clawed back from the host's future payouts. No cap. No expiration.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Monitor and dispute chargebacks on your account &rarr;</a>
+                <h4>Open-Ended Financial Exposure</h4>
+                <p>Under the 2025 payment terms, a guest can dispute a credit card charge months after a completed stay, and the full amount can be deducted from the host's future payouts. No cap, no expiration stated. This is the single most important change for hosts to understand &mdash; a completed stay no longer means guaranteed revenue.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Monitor and protect against chargebacks &rarr;</a>
               </div>
             </li>
             <li>
               <div class="tooltip-trigger" onclick="toggleTooltip(this)">Airbnb can delay or withhold payouts at its discretion</div>
               <div class="tooltip-panel">
-                <h4>Discretionary Payout Holds</h4>
-                <p>The updated terms give Airbnb the right to delay, adjust, or withhold payouts if it detects "risk factors." The platform has no obligation to explain what the risk factors are, when the hold will be lifted, or allow the host to challenge the decision. Your earned revenue can be held indefinitely.</p>
+                <h4>Cash Flow Risk</h4>
+                <p>The platform can now delay, adjust, or withhold payouts if it detects "risk factors" &mdash; without explaining what those factors are or when the hold will lift. For hosts managing mortgages, cleaning crews, and maintenance costs, payout predictability is a business requirement. Monitor your payouts actively.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Track payout delays and escalate holds &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Reserve Now, Pay Later blocks host calendars for unpaid bookings</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Reserve Now, Pay Later can block calendar for unpaid bookings</div>
               <div class="tooltip-panel">
-                <h4>Calendar Blocked, Payment Uncertain</h4>
-                <p>Guests can now book without paying upfront. If the guest fails to pay 72 hours before check-in, Airbnb cancels the reservation &mdash; but the host's calendar was already blocked for that period. Lost availability, zero compensation, and the host couldn't accept other bookings for those dates.</p>
+                <h4>Calendar Risk</h4>
+                <p>Guests can book without paying upfront. If they don't pay 72 hours before check-in, Airbnb cancels the reservation &mdash; but the host's calendar was blocked the entire time. You couldn't accept other bookings for those dates. Understand this feature exists and factor it into your availability strategy.</p>
                 <a class="cta-link" href="https://strclawback.com/#get-started">Minimize exposure to unpaid reservation holds &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Direct contact with guests prohibited and AI-monitored</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Direct guest contact now prohibited and AI-monitored</div>
               <div class="tooltip-panel">
-                <h4>Communication Lockdown</h4>
-                <p>Hosts can no longer share email addresses, phone numbers, or personal websites with guests. Airbnb now uses AI to monitor messages and enforce this rule. This prevents hosts from building direct relationships with guests, directing them to direct booking channels, or communicating outside the platform during disputes.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Build a direct booking strategy within the rules &rarr;</a>
+                <h4>Communication Through the Platform</h4>
+                <p>Hosts can no longer share personal contact information with guests. Airbnb uses AI to monitor messages and enforce this. The platform wants all communication (and future bookings) to flow through Airbnb. Hosts building direct booking strategies need to find compliant ways to build their brand outside the platform.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build your direct booking channel within the rules &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">All fees must go through platform &mdash; no outside collection</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">All fees and deposits must go through Airbnb's system</div>
               <div class="tooltip-panel">
-                <h4>Total Fee Control</h4>
-                <p>Cleaning fees, pet fees, resort fees, security deposits &mdash; everything must now go through Airbnb's pricing tools. Collecting any payment outside the platform is a Terms of Service violation. This eliminates hosts' ability to use independent security deposits or damage holds that they control.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Structure your fees within platform requirements &rarr;</a>
+                <h4>Total Platform Control</h4>
+                <p>Cleaning fees, pet fees, security deposits &mdash; everything flows through Airbnb's tools now. No outside payment collection. This gives the platform complete control over the financial relationship. Hosts who previously used independent security deposits or damage holds need to restructure within the platform's framework.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Restructure your fee strategy for the new rules &rarr;</a>
               </div>
             </li>
           </ul>
@@ -935,46 +1023,47 @@
         <div class="timeline-content">
           <div class="timeline-date">October 2025</div>
           <h2>Strict Policy Eliminated &amp; Cancellation Overhaul</h2>
-          <div class="impact-label">Host Impact: <span class="severity critical">CRITICAL</span></div>
+          <div class="market-note">Market context: Guest acquisition priority &bull; Supply-saturated &bull; Commission at 15.5%</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity know-this">KNOW THIS</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Strict cancellation policy removed entirely</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Strict cancellation policy removed from the platform</div>
               <div class="tooltip-panel">
-                <h4>No More Strict</h4>
-                <p>The Strict cancellation policy is no longer offered. All existing Strict listings were automatically migrated to the "Firm" policy, which provides significantly less protection. The Strict policy &mdash; long the strongest tool hosts had against last-minute cancellations &mdash; no longer exists on the platform.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Assess your exposure under the new policy tiers &rarr;</a>
+                <h4>Adapt to the New Tiers</h4>
+                <p>The Strict cancellation policy no longer exists. All Strict listings were migrated to "Firm." A new "Limited" tier is now the strictest available. Hosts who relied on Strict need to recalibrate &mdash; both their expectations and their pricing. If your revenue model depended on non-refundable bookings, it needs updating.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Recalibrate your pricing for the new cancellation tiers &rarr;</a>
               </div>
             </li>
             <li>
               <div class="tooltip-trigger" onclick="toggleTooltip(this)">Mandatory 24-hour free cancellation on all bookings</div>
               <div class="tooltip-panel">
                 <h4>Universal Free Cancellation Window</h4>
-                <p>Every booking of 27 nights or fewer now includes a mandatory 24-hour free cancellation period (full refund if canceled within 24 hours of booking and at least 7 days before check-in). This applies to every cancellation tier. There is no way for a host to offer truly non-refundable rates on Airbnb.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Adapt your pricing for mandatory cancellation windows &rarr;</a>
+                <p>Every booking under 28 nights now has a mandatory 24-hour free cancellation window (if booked 7+ days before check-in). There is no way to offer truly non-refundable rates on Airbnb anymore. This is Airbnb's bet that lower booking friction increases overall volume &mdash; hosts need to decide whether that trade works for them.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Adjust your strategy for mandatory cancellation windows &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">New "Limited" tier is weaker than old Strict</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">New "Limited" policy is significantly weaker than old Strict</div>
               <div class="tooltip-panel">
-                <h4>Limited vs. Strict Comparison</h4>
-                <p>The new "Limited" tier (the strictest available) offers: full refund at 14+ days, 50% at 7-14 days, non-refundable within 7 days. The old Strict offered: 50% refund only if canceled 7+ days before, no refund within 7 days, and only a 48-hour booking grace period. Hosts lost significant protection.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Compare your old vs. new cancellation protection &rarr;</a>
+                <h4>Know What You Actually Have</h4>
+                <p>Old Strict: 50% refund only if canceled 7+ days before, no refund within 7 days, 48-hour booking grace period. New Limited: full refund at 14+ days, 50% at 7-14 days, non-refundable within 7 days. That's a meaningful difference in protection. Price your listings knowing the real cancellation math.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Compare your old vs. new protection levels &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Auto-migration gave hosts no choice in policy transition</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Auto-migration placed Strict hosts on Firm, not Limited</div>
               <div class="tooltip-panel">
-                <h4>Forced Migration</h4>
-                <p>Hosts with Strict policies were automatically moved to Firm &mdash; not Limited (the closest replacement). This means hosts were downgraded two tiers without consent: from the strongest available policy to the third-strongest. Hosts had to manually switch to Limited after the migration.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Verify your current policy is set correctly &rarr;</a>
+                <h4>Check Your Settings</h4>
+                <p>Hosts with Strict were auto-migrated to Firm &mdash; not Limited (the closest replacement). That's a two-tier downgrade without consent. Many hosts didn't notice. If you had Strict and haven't manually switched to Limited, you may have less protection than you think. Go check right now.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Verify and optimize your current policy settings &rarr;</a>
               </div>
             </li>
             <li>
               <div class="tooltip-trigger" onclick="toggleTooltip(this)">Non-refundable rates no longer possible on the platform</div>
               <div class="tooltip-panel">
-                <h4>The End of Non-Refundable</h4>
-                <p>With the mandatory 24-hour free cancellation window and the elimination of Strict, there is no configuration on Airbnb that produces a truly non-refundable booking. Every reservation can be canceled for free within 24 hours. Hotels and airlines still offer non-refundable rates &mdash; Airbnb hosts cannot.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Offset cancellation risk with revenue protection strategies &rarr;</a>
+                <h4>The New Reality</h4>
+                <p>Hotels and airlines still offer non-refundable rates. Airbnb hosts cannot. This is a competitive disadvantage for hosts who use cancellation policies as a revenue protection tool. The strategic response: build the cancellation risk into your pricing, diversify to platforms that still offer strict options, and develop direct booking channels.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Price in cancellation risk and diversify your channels &rarr;</a>
               </div>
             </li>
           </ul>
@@ -982,51 +1071,52 @@
         <div class="timeline-dot"></div>
       </div>
 
-      <!-- ========== ONGOING 2024-2025 ========== -->
+      <!-- ========== 2024-2025 ========== -->
       <div class="timeline-entry">
         <div class="timeline-content">
           <div class="timeline-date">2024 &ndash; 2025</div>
-          <h2>AI-Driven Dispute Resolution &amp; Review Manipulation</h2>
-          <div class="impact-label">Host Impact: <span class="severity high">HIGH</span></div>
+          <h2>AI-Driven Dispute Resolution &amp; Review Changes</h2>
+          <div class="market-note">Market context: Platform scaling support costs &bull; AI replacing human review</div>
+          <div class="impact-label">Savvy Host Level: <span class="severity stay-sharp">STAY SHARP</span></div>
           <ul class="tooltip-list">
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">AI systems now handle most host dispute decisions</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">AI systems now handle most dispute decisions</div>
               <div class="tooltip-panel">
-                <h4>Automated Denial Machine</h4>
-                <p>Airbnb increasingly routes dispute decisions through AI systems rather than human agents. Hosts report that AI-generated responses frequently misapply policies, fail to consider submitted evidence, and produce identical denial language regardless of the specific circumstances of the dispute.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Learn how to escalate past automated responses &rarr;</a>
+                <h4>Prepare for the Algorithm</h4>
+                <p>Airbnb increasingly routes disputes through AI rather than human agents. AI decisions are pattern-based &mdash; they respond to structured evidence, clear documentation, and specific policy citations. Hosts who present their cases like lawyers (organized, evidence-backed, policy-referenced) get better outcomes than those who write emotional appeals.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Learn how to present disputes for AI adjudication &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Retaliatory review policy exists but is rarely enforced</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Retaliatory review policy exists but enforcement is inconsistent</div>
               <div class="tooltip-panel">
-                <h4>Policy Without Enforcement</h4>
-                <p>Airbnb's review policy prohibits retaliatory reviews (reviews left in response to a host enforcing policies or denying a refund). In practice, hosts report that removal requests are handled by the same AI systems and are frequently denied &mdash; even when the review explicitly references a refund dispute.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Document retaliatory reviews for effective appeals &rarr;</a>
+                <h4>Policy vs. Practice</h4>
+                <p>Airbnb prohibits retaliatory reviews (reviews left because a host enforced policies or denied a refund). In practice, removal requests go through AI systems that often miss context. The best approach: respond publicly and professionally to negative reviews, and document the retaliatory pattern for removal requests.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Build effective review management strategies &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guests can leave damaging reviews after receiving refunds</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Guests can leave negative reviews after receiving refunds</div>
               <div class="tooltip-panel">
-                <h4>Double Punishment</h4>
-                <p>A guest who receives a wrongful refund can also leave a negative review. The host loses the revenue AND takes a rating hit. Airbnb does not remove reviews simply because the associated stay resulted in a refund &mdash; meaning the host is punished twice for the same disputed stay.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Challenge reviews tied to wrongful refunds &rarr;</a>
+                <h4>Double Exposure</h4>
+                <p>A guest who receives a refund can also leave a negative review &mdash; the host loses revenue and takes a rating hit. This isn't unique to Airbnb (Amazon sellers face similar dynamics). The defense: prevent the situation from arising through exceptional hospitality, and when it does happen, respond strategically.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Develop your review defense strategy &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">No human escalation path for most disputes</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Human escalation paths increasingly limited</div>
               <div class="tooltip-panel">
-                <h4>Dead-End Support</h4>
-                <p>The shift to AI-driven resolution has effectively eliminated the human escalation path for most disputes. Hosts report being unable to reach decision-makers, receiving loop responses from AI systems, and having cases "resolved" without any human review of the evidence.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Access effective escalation strategies &rarr;</a>
+                <h4>Work the System</h4>
+                <p>Getting to a human decision-maker is harder than it used to be. But it's not impossible. Hosts who understand the support escalation process &mdash; the right language, the right channels, the right timing &mdash; still get human review on important cases. It's a skill worth developing.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Master the escalation process &rarr;</a>
               </div>
             </li>
             <li>
-              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Host response rate pressured by automated timelines</div>
+              <div class="tooltip-trigger" onclick="toggleTooltip(this)">Tight response deadlines auto-resolve in guest's favor if missed</div>
               <div class="tooltip-panel">
-                <h4>Compressed Response Windows</h4>
-                <p>Automated systems impose tight response deadlines on hosts during disputes. Miss a 24-hour or 48-hour window &mdash; easy to do if you manage multiple properties or are in a different timezone &mdash; and the system auto-resolves in the guest's favor. The clock benefits the party that initiated the complaint.</p>
-                <a class="cta-link" href="https://strclawback.com/#get-started">Set up alerts so you never miss a dispute window &rarr;</a>
+                <h4>Speed Is a Strategy</h4>
+                <p>Dispute systems impose 24-48 hour response windows. Miss the deadline and the system auto-resolves for the guest. For hosts managing multiple properties across time zones, this requires monitoring systems, not just good intentions. Set up alerts so you never lose a dispute to a clock.</p>
+                <a class="cta-link" href="https://strclawback.com/#get-started">Set up automated monitoring for dispute deadlines &rarr;</a>
               </div>
             </li>
           </ul>
@@ -1040,107 +1130,88 @@
 
     <!-- Summary -->
     <div class="summary-box">
-      <h3>The Pattern Is Clear</h3>
+      <h3>What Smart Hosts Are Doing About It</h3>
       <ul>
-        <li><strong>Host cancellation policies have been systematically weakened</strong> &mdash; from the COVID override to the elimination of Strict to the mandatory free cancellation window</li>
-        <li><strong>Guest refund pathways have multiplied</strong> &mdash; Rebooking Policy, AirCover for Guests, Travel Issues, and Major Disruptive Events all provide routes that bypass host settings</li>
-        <li><strong>Financial risk has shifted entirely to hosts</strong> &mdash; unlimited chargeback liability, discretionary payout holds, and unpaid reservation calendar blocking</li>
-        <li><strong>Host penalties for cancellation have increased 10x</strong> while guest cancellation has become easier and more flexible with every update</li>
-        <li><strong>Legal recourse has been eliminated</strong> &mdash; mandatory arbitration and class action waivers ensure hosts cannot collectively challenge any of this</li>
+        <li><strong>Understanding that cancellation policies are settings, not contracts</strong> &mdash; and building revenue strategies that account for platform overrides</li>
+        <li><strong>Documenting everything</strong> &mdash; check-in photos, property condition, guest communication &mdash; because disputes are won with evidence, not arguments</li>
+        <li><strong>Pricing in cancellation risk</strong> now that non-refundable rates are gone and the 24-hour free cancellation window is mandatory</li>
+        <li><strong>Monitoring payouts actively</strong> &mdash; chargebacks, holds, and refunds can hit your account without notice, and deadlines auto-resolve against you</li>
+        <li><strong>Diversifying booking channels</strong> &mdash; no single platform should control 100% of your revenue, especially one that changes its terms annually</li>
       </ul>
     </div>
 
-    <p>Each change was presented as an improvement. Each one was incremental. And each one moved the needle in the same direction: away from hosts and toward the platform. The question isn't whether this will continue. The question is what you're going to do about it.</p>
+    <p>Airbnb isn't the enemy &mdash; it's a marketplace making business decisions in a supply-saturated market. The hosts who thrive are the ones who read the landscape, adapt their strategy, and stay one step ahead of each policy shift. The hosts who struggle are the ones who treat their cancellation policy as a guarantee and their payout as a certainty.</p>
+
+    <p>Which one are you?</p>
 
     <!-- CTA -->
     <div class="blog-cta">
-      <h3>Stop Absorbing the Losses</h3>
-      <p>STR ClawBack tracks every policy change, monitors your payouts, and fights wrongful refunds so you don't have to.</p>
+      <h3>Stay Ahead of the Next Change</h3>
+      <p>STR ClawBack monitors policy shifts, tracks your payouts, and gives you the tools to protect your revenue &mdash; so you're never caught off guard.</p>
       <a href="https://strclawback.com/#get-started">Get Started</a>
     </div>
 
-    <div class="section-divider"><span class="dots">&bull; &bull; &bull;</span></div>
+    <!-- Sources -->
+    <div class="sources-section">
+      <h3>Sources &amp; Further Reading</h3>
+      <p class="sources-note">The policy changes documented above were verified through the following sources. Links are current as of March 2026.</p>
 
-    <!-- Sources & Bibliography -->
-    <div class="bibliography">
-      <h3>Sources &amp; Bibliography</h3>
-      <p class="bib-intro">This timeline was compiled from official Airbnb policy documents, newsroom announcements, and independent reporting by short-term rental industry publications. All sources verified as of March 2026.</p>
-
-      <div class="bib-section">
-        <h4>Official Airbnb Sources</h4>
+      <div class="sources-group">
+        <h4>Airbnb Official</h4>
         <ul>
           <li><a href="https://news.airbnb.com/extenuating-circumstances-policy-activated-around-the-world/" target="_blank" rel="noopener">Extenuating Circumstances Policy Activated Around the World</a> &mdash; Airbnb Newsroom, March 2020</li>
-          <li><a href="https://news.airbnb.com/updating-our-extenuating-circumstances-policy/" target="_blank" rel="noopener">Updating our Extenuating Circumstances Policy</a> &mdash; Airbnb Newsroom, March 2020</li>
-          <li><a href="https://news.airbnb.com/update-about-our-extenuating-circumstances-policy-may-1-2020/" target="_blank" rel="noopener">Extenuating Circumstances Policy Update</a> &mdash; Airbnb Newsroom, May 2020</li>
-          <li><a href="https://www.airbnb.com/help/article/2701" target="_blank" rel="noopener">Extenuating Circumstances Policy and COVID-19</a> &mdash; Airbnb Help Center</li>
-          <li><a href="https://www.airbnb.com/help/article/2868" target="_blank" rel="noopener">Rebooking and Refund Policy for Homes</a> &mdash; Airbnb Help Center, April 2022</li>
-          <li><a href="https://news.airbnb.com/2022-summer-release/" target="_blank" rel="noopener">The Airbnb 2022 Summer Release</a> &mdash; Airbnb Newsroom, May 2022</li>
-          <li><a href="https://news.airbnb.com/2022-winter-release/" target="_blank" rel="noopener">Airbnb 2022 Winter Release</a> &mdash; Airbnb Newsroom, November 2022</li>
-          <li><a href="https://www.airbnb.com/help/article/990" target="_blank" rel="noopener">Host Cancellation Policy for Homes</a> &mdash; Airbnb Help Center</li>
-          <li><a href="https://news.airbnb.com/an-update-on-our-major-disruptive-events-policy/" target="_blank" rel="noopener">An Update on our Major Disruptive Events Policy</a> &mdash; Airbnb Newsroom, March 2024</li>
-          <li><a href="https://www.airbnb.com/help/article/1320" target="_blank" rel="noopener">Major Disruptive Events Policy</a> &mdash; Airbnb Help Center, 2024</li>
-          <li><a href="https://www.airbnb.com/resources/hosting-homes/a/what-is-the-major-disruptive-events-policy-660" target="_blank" rel="noopener">What is the Major Disruptive Events Policy?</a> &mdash; Airbnb Resource Center, 2024</li>
-          <li><a href="https://www.airbnb.com/help/article/2908" target="_blank" rel="noopener">Terms of Service</a> &mdash; Airbnb Help Center, Updated Feb 2025</li>
-          <li><a href="https://www.airbnb.com/help/article/2877" target="_blank" rel="noopener">About the Updates to our Terms</a> &mdash; Airbnb Help Center, 2024&ndash;2025</li>
-          <li><a href="https://www.airbnb.com/help/article/3735" target="_blank" rel="noopener">Updates to Listing Cancellation Policies</a> &mdash; Airbnb Help Center, 2025</li>
+          <li><a href="https://news.airbnb.com/update-about-our-extenuating-circumstances-policy-may-1-2020/" target="_blank" rel="noopener">Update About Our Extenuating Circumstances Policy</a> &mdash; Airbnb Newsroom, May 2020</li>
+          <li><a href="https://news.airbnb.com/2022-summer-release/" target="_blank" rel="noopener">2022 Summer Release: AirCover for Guests</a> &mdash; Airbnb Newsroom, May 2022</li>
+          <li><a href="https://news.airbnb.com/2022-winter-release/" target="_blank" rel="noopener">2022 Winter Release: Enhanced AirCover for Hosts</a> &mdash; Airbnb Newsroom, November 2022</li>
+          <li><a href="https://news.airbnb.com/an-update-on-our-major-disruptive-events-policy/" target="_blank" rel="noopener">An Update on Our Major Disruptive Events Policy</a> &mdash; Airbnb Newsroom, March 2024</li>
+          <li><a href="https://www.airbnb.com/help/article/2877" target="_blank" rel="noopener">About Updates to Our Terms of Service</a> &mdash; Airbnb Help Center</li>
+          <li><a href="https://www.airbnb.com/help/article/2908" target="_blank" rel="noopener">Airbnb Terms of Service</a> &mdash; Airbnb Help Center</li>
+          <li><a href="https://www.airbnb.com/help/article/2673" target="_blank" rel="noopener">Reviews Policy</a> &mdash; Airbnb Help Center</li>
         </ul>
       </div>
 
-      <div class="bib-section">
-        <h4>Airbnb Community Forums</h4>
+      <div class="sources-group">
+        <h4>Industry Analysis</h4>
         <ul>
-          <li><a href="https://community.withairbnb.com/t5/Support-with-your-bookings/Our-guest-rebooking-and-refund-policy-explained/m-p/1602537" target="_blank" rel="noopener">Our Guest Rebooking and Refund Policy Explained</a> &mdash; Airbnb Community, 2022</li>
-          <li><a href="https://community.withairbnb.com/t5/Help-with-your-business/Is-Airbnb-s-AI-system-now-making-decisions-on-review-removal/td-p/2169087" target="_blank" rel="noopener">Is Airbnb's AI System Now Making Decisions on Review Removal?</a> &mdash; Airbnb Community, 2024</li>
-          <li><a href="https://community.withairbnb.com/t5/Support-with-your-bookings/Retaliatory-Reviews-False-Claims-amp-Airbnb-s-AI-Review-Removal/m-p/2139137" target="_blank" rel="noopener">Retaliatory Reviews, False Claims &amp; Airbnb's AI Review Removal</a> &mdash; Airbnb Community, 2024</li>
-          <li><a href="https://community.withairbnb.com/t5/Help-with-your-business/The-new-system-for-challenging-unfair-reviews-leaves-us/m-p/2115200" target="_blank" rel="noopener">The New System for Challenging Unfair Reviews Leaves Us Unprotected</a> &mdash; Airbnb Community, 2024</li>
-        </ul>
-      </div>
-
-      <div class="bib-section">
-        <h4>Industry News &amp; Travel Publications</h4>
-        <ul>
-          <li><a href="https://skift.com/2022/08/01/airbnbs-10-fold-increase-in-host-cancellation-fees-could-benefit-guests/" target="_blank" rel="noopener">Airbnb's 10-Fold Increase in Host Cancellation Fees Could Benefit Guests</a> &mdash; Skift, August 2022</li>
-          <li><a href="https://skift.com/2024/03/28/hurricanes-but-not-flu-outbreaks-airbnb-revises-cancellation-policy/" target="_blank" rel="noopener">Hurricanes But Not Flu Outbreaks: Airbnb Revises Cancellation Policy</a> &mdash; Skift, March 2024</li>
-          <li><a href="https://techcrunch.com/2022/05/11/airbnb-categories-split-stays-aircover/" target="_blank" rel="noopener">Airbnb Wants to Get the World Traveling Again</a> &mdash; TechCrunch, May 2022</li>
-          <li><a href="https://thepointsguy.com/news/airbnb-new-categories-aircover/" target="_blank" rel="noopener">Airbnb Just Dropped Its 'Biggest Change' in a Decade</a> &mdash; The Points Guy, May 2022</li>
-          <li><a href="https://www.insurancejournal.com/news/national/2022/05/12/667323.htm" target="_blank" rel="noopener">Airbnb Beefing Up Guest Services With AirCover Protection</a> &mdash; Insurance Journal, May 2022</li>
-          <li><a href="https://lamag.com/travel/airbnb-changes-policy-to-eliminate-coverage-for-travel-disruptions" target="_blank" rel="noopener">Airbnb Eliminates Coverage for Travel Disruptions</a> &mdash; LA Magazine, 2024</li>
-          <li><a href="https://shorttermrentalz.com/news/airbnb-revised-major-disruptive-events-policy/" target="_blank" rel="noopener">Airbnb Announces Revised Major Disruptive Events Policy</a> &mdash; Short Term Rentalz, March 2024</li>
-          <li><a href="https://shorttermrentalz.com/news/airbnb-makes-major-changes-to-cancellation-policy/" target="_blank" rel="noopener">Airbnb Makes Major Changes to Cancellation Policy</a> &mdash; Short Term Rentalz, 2025</li>
-        </ul>
-      </div>
-
-      <div class="bib-section">
-        <h4>STR Industry Blogs &amp; Analysis</h4>
-        <ul>
-          <li><a href="https://www.rentalscaleup.com/new-airbnb-rebooking-and-refund-policy-tougher-for-hosts-but-guests-affected-by-new-terms-too/" target="_blank" rel="noopener">New Airbnb Rebooking and Refund Policy Tougher for Hosts</a> &mdash; Rental Scale-Up, 2022</li>
-          <li><a href="https://www.rentalscaleup.com/airbnb-host-cancellation-fee-penalty/" target="_blank" rel="noopener">Airbnb Host Cancellation Fee Penalty: $50 to $1,000</a> &mdash; Rental Scale-Up, 2022</li>
-          <li><a href="https://www.rentalscaleup.com/airbnb-updates-cancellation-policy-impact-for-airbnb-hosts/" target="_blank" rel="noopener">Airbnb Updates Cancellation Policy: Impact for Hosts</a> &mdash; Rental Scale-Up, 2024</li>
-          <li><a href="https://www.rentalscaleup.com/airbnb-payment-terms-update-for-hosts/" target="_blank" rel="noopener">Airbnb Payment Terms 2025: Delayed Payouts, Guest Defaults &amp; More</a> &mdash; Rental Scale-Up, 2025</li>
+          <li><a href="https://www.rentalscaleup.com/new-airbnb-rebooking-and-refund-policy-tougher-for-hosts-but-guests-affected-by-new-terms-too/" target="_blank" rel="noopener">New Airbnb Rebooking and Refund Policy</a> &mdash; Rental Scale-Up, April 2022</li>
+          <li><a href="https://www.rentalscaleup.com/airbnb-host-cancellation-fee-penalty/" target="_blank" rel="noopener">Airbnb Host Cancellation Fee Penalty Increase</a> &mdash; Rental Scale-Up, August 2022</li>
           <li><a href="https://www.rentalscaleup.com/airbnb-cancellation-policy-updates-2025/" target="_blank" rel="noopener">Airbnb Cancellation Policy Updates 2025</a> &mdash; Rental Scale-Up, 2025</li>
-          <li><a href="https://www.hostaway.com/blog/airbnb-rebooking-and-refund-policy-update/" target="_blank" rel="noopener">Airbnb Rebooking and Refund Policy Update</a> &mdash; Hostaway, 2022</li>
-          <li><a href="https://www.hostaway.com/blog/airbnb-aircover-everything-to-know/" target="_blank" rel="noopener">Airbnb AirCover &mdash; Everything to Know</a> &mdash; Hostaway, 2022</li>
-          <li><a href="https://www.hostaway.com/blog/airbnb-cancellation-policies/" target="_blank" rel="noopener">The Ultimate Guide to Airbnb Cancellation Policy for Hosts</a> &mdash; Hostaway, Updated 2025</li>
-          <li><a href="https://hospitable.com/airbnb-major-disruptive-events-policy" target="_blank" rel="noopener">Airbnb Major Disruptive Events Policy: 101 for Hosts</a> &mdash; Hospitable, 2024</li>
-          <li><a href="https://vrmintel.com/risky-business-using-airbnb-for-bookings-just-got-even-riskier-for-vacation-rental-owners-and-managers/" target="_blank" rel="noopener">Using Airbnb For Bookings Just Got Even More Risky</a> &mdash; VRM Intel, 2022</li>
-          <li><a href="https://your.rentals/blog/airbnb-rebooking-refund-policy/" target="_blank" rel="noopener">Airbnb Rebooking &amp; Refund Policy Changes That Affect Hosts</a> &mdash; Your.Rentals, 2022</li>
-          <li><a href="https://thehost.co/blog-list/airbnb-chargeback-policy" target="_blank" rel="noopener">New Airbnb Chargeback Policy = More Risk for Hosts</a> &mdash; The Host Co, 2025</li>
-          <li><a href="https://stayfi.com/vrm-insider/2025/07/02/airbnbs-2025-payment-policy-changes-what-hosts-need-to-know-how-to-protect-your-business/" target="_blank" rel="noopener">Airbnb's 2025 Payment Policy Changes: What Hosts Need to Know</a> &mdash; StayFi, July 2025</li>
-          <li><a href="https://craftedstays.co/blog/airbnbs-2025-policy-changes-why-str-operators-are-accelerating-direct-booking-strategies/" target="_blank" rel="noopener">Airbnb's 2025 Policy Changes: Why STR Operators Are Accelerating Direct Booking</a> &mdash; CraftedStays, 2025</li>
-          <li><a href="https://www.bnbcalc.com/blog/airbnb-business/how-to-start-airbnb/airbnb-cancellation-policy-2025-update" target="_blank" rel="noopener">Airbnb Cancellation Policy 2025 Update</a> &mdash; BNBCalc, 2025</li>
-          <li><a href="https://roomonitor.com/en/airbnb-cancellation-policy-changes/" target="_blank" rel="noopener">Airbnb Cancellation Policy Changes: New Conditions from October 2025</a> &mdash; Roomonitor, 2025</li>
-          <li><a href="https://www.nowistay.com/ressources/new-airbnb-cancellation-policies-2025-risks-hosts" target="_blank" rel="noopener">Airbnb Cancellation Policy 2025: What Changes for Hosts</a> &mdash; Nowistay, 2025</li>
-          <li><a href="https://www.gatechecked.com/airbnb-increases-maximum-host-cancellation-fee-6646" target="_blank" rel="noopener">Airbnb Increases Maximum Host Cancellation Fee From $100 to $1,000</a> &mdash; Gate Checked, 2022</li>
+          <li><a href="https://www.rentalscaleup.com/airbnb-payment-terms-update-for-hosts/" target="_blank" rel="noopener">Airbnb Payment Terms Update for Hosts</a> &mdash; Rental Scale-Up, 2025</li>
+          <li><a href="https://skift.com/2024/03/28/hurricanes-but-not-flu-outbreaks-airbnb-revises-cancellation-policy/" target="_blank" rel="noopener">Hurricanes But Not Flu Outbreaks: Airbnb Revises Cancellation Policy</a> &mdash; Skift, March 2024</li>
+          <li><a href="https://skift.com/2025/07/10/airbnb-to-introduce-more-guest-friendly-cancellation-policies/" target="_blank" rel="noopener">Airbnb to Introduce More Guest-Friendly Cancellation Policies</a> &mdash; Skift, July 2025</li>
+          <li><a href="https://vrmintel.com/risky-business-using-airbnb-for-bookings-just-got-even-riskier-for-vacation-rental-owners-and-managers/" target="_blank" rel="noopener">Using Airbnb Got Even More Risky for Hosts</a> &mdash; VRM Intel, 2022</li>
         </ul>
       </div>
 
-      <div class="bib-section">
-        <h4>Legal &amp; Policy Analysis</h4>
+      <div class="sources-group">
+        <h4>Host Resources &amp; Commentary</h4>
         <ul>
-          <li><a href="https://www.traverselegal.com/blog/how-to-arbitrate-claims-airbnb/" target="_blank" rel="noopener">How to Arbitrate Claims Against Airbnb</a> &mdash; Traverse Legal, 2024</li>
-          <li><a href="https://www.traverselegal.com/blog/why-are-airbnb-hosts-litigating-a-class-action-against-airbnb/" target="_blank" rel="noopener">Why Are Airbnb Hosts Litigating a Class Action Against Airbnb?</a> &mdash; Traverse Legal, 2024</li>
-          <li><a href="https://lawprofessors.typepad.com/contractsprof_blog/2024/08/guest-injured-at-airbnb-not-bound-by-airbnbs-arbitration-clause.html" target="_blank" rel="noopener">Guest Injured at Airbnb Not Bound by Airbnb's Arbitration Clause</a> &mdash; ContractsProf Blog, August 2024</li>
-          <li><a href="https://tish.law/blog/short-term-rentals-long-term-risks-navigation-legal-battles-in-the-airbnb-economy/" target="_blank" rel="noopener">Short-Term Rentals, Long-Term Risks: Legal Battles in the Airbnb Economy</a> &mdash; Tish Law, 2024</li>
+          <li><a href="https://hospitable.com/reaction-airbnb-cancellation-policy" target="_blank" rel="noopener">Reaction to Airbnb Cancellation Policy Changes</a> &mdash; Hospitable</li>
+          <li><a href="https://hospitable.com/airbnb-major-disruptive-events-policy" target="_blank" rel="noopener">Airbnb Major Disruptive Events Policy Explained</a> &mdash; Hospitable</li>
+          <li><a href="https://www.hostaway.com/blog/airbnb-rebooking-and-refund-policy-update/" target="_blank" rel="noopener">Airbnb Rebooking and Refund Policy Update</a> &mdash; Hostaway</li>
+          <li><a href="https://www.hostaway.com/blog/airbnb-aircover/" target="_blank" rel="noopener">Airbnb AirCover for Hosts Explained</a> &mdash; Hostaway</li>
+          <li><a href="https://stayfi.com/vrm-insider/2025/07/02/airbnbs-2025-payment-policy-changes-what-hosts-need-to-know-how-to-protect-your-business/" target="_blank" rel="noopener">Airbnb's 2025 Payment Policy Changes: What Hosts Need to Know</a> &mdash; StayFi</li>
+          <li><a href="https://thehost.co/blog-list/airbnb-chargeback-policy" target="_blank" rel="noopener">New Airbnb Chargeback Policy</a> &mdash; The Host Co</li>
+          <li><a href="https://craftedstays.co/blog/airbnbs-2025-policy-changes-why-str-operators-are-accelerating-direct-booking-strategies/" target="_blank" rel="noopener">Why STR Operators Are Accelerating Direct Booking Strategies</a> &mdash; CraftedStays</li>
+          <li><a href="https://www.bnbcalc.com/blog/airbnb-business/how-to-start-airbnb/airbnb-cancellation-policy-2025-update" target="_blank" rel="noopener">Airbnb Cancellation Policy 2025 Update</a> &mdash; BNBCalc</li>
+          <li><a href="https://www.nowistay.com/ressources/new-airbnb-cancellation-policies-2025-risks-hosts" target="_blank" rel="noopener">New Airbnb Cancellation Policies 2025: Risks for Hosts</a> &mdash; NowiStay</li>
+          <li><a href="https://www.cascadiagetaways.com/what-is-the-new-airbnb-2025-policy-a-guide-for-homeowners/" target="_blank" rel="noopener">5 Key Changes Every Host Must Know</a> &mdash; Cascadia Getaways</li>
+          <li><a href="https://www.steadily.com/blog/airbnb-host-rule-changes-cancellations-landlords" target="_blank" rel="noopener">Airbnb Host Rule Changes: Cancellations &amp; Landlords</a> &mdash; Steadily</li>
+          <li><a href="https://www.gatechecked.com/airbnb-increases-maximum-host-cancellation-fee-6646" target="_blank" rel="noopener">Airbnb Increases Max Host Cancellation Fee</a> &mdash; Gate Checked</li>
+          <li><a href="https://lamag.com/travel/airbnb-changes-policy-to-eliminate-coverage-for-travel-disruptions" target="_blank" rel="noopener">Airbnb Eliminates Coverage for Travel Disruptions</a> &mdash; LA Mag</li>
+          <li><a href="https://roomonitor.com/en/airbnb-cancellation-policy-changes/" target="_blank" rel="noopener">Major Airbnb Cancellation Policy Changes</a> &mdash; Roomonitor</li>
+          <li><a href="https://your.rentals/blog/airbnb-rebooking-refund-policy/" target="_blank" rel="noopener">Airbnb Rebooking &amp; Refund Policy Changes</a> &mdash; Your.Rentals</li>
+          <li><a href="https://www.lodgify.com/blog/airbnb-winter-update/" target="_blank" rel="noopener">Airbnb Winter Update 2022</a> &mdash; Lodgify</li>
+          <li><a href="https://www.lodgify.com/blog/airbnb-2023-summer-release/" target="_blank" rel="noopener">Airbnb 2023 Summer Release</a> &mdash; Lodgify</li>
+        </ul>
+      </div>
+
+      <div class="sources-group">
+        <h4>Community Discussions</h4>
+        <ul>
+          <li><a href="https://community.withairbnb.com/t5/Airbnb-updates/A-new-system-to-hold-guests-accountable/m-p/1712404" target="_blank" rel="noopener">A New System to Hold Guests Accountable</a> &mdash; Airbnb Community Forum</li>
+          <li><a href="https://community.withairbnb.com/t5/Support-with-your-bookings/New-Retaliatory-review-policy/m-p/1767812" target="_blank" rel="noopener">New Retaliatory Review Policy</a> &mdash; Airbnb Community Forum</li>
+          <li><a href="https://community.withairbnb.com/t5/Support-with-your-bookings/Retaliatory-Review-Policy-Not-Enforced/td-p/2169528" target="_blank" rel="noopener">Retaliatory Review Policy Not Enforced</a> &mdash; Airbnb Community Forum</li>
         </ul>
       </div>
     </div>
